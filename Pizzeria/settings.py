@@ -154,10 +154,10 @@ if os.getcwd() == '/app':
     # Honor the 'X-Forwarded-Proto' header for request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-    # Allow only Heroku to host the project.
-    #ALLOWED_HOSTS = ['pizzeria-app.herokuapp.com']
-    #DEBUG = False
-    ALLOWED_HOSTS = ['*']
+    #Allow only Heroku to host the project.
+    ALLOWED_HOSTS = ['pizzeria-app.herokuapp.com']
+    DEBUG = False
+
 # Static asset configuration (should be indented forward?)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
