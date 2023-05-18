@@ -1,0 +1,18 @@
+{% extends "pizzeria_app/base.html" %} 
+
+{% block header %}
+  <div class='jumbotron'>
+     <h1>Track your pizzas.</h1>
+  </div>
+{% endblock header %}
+
+{% block content %}
+  <p>Pizzeria App helps you keep track of different types of pizzas and their toppings combinations.</p>
+  <h2>
+    <a href="{% url 'users:register' %}">Register an account</a> to make
+    your own Pizzeria, and list the pizzas you're creating.
+  </h2>
+  <h2>
+    You can add toppings to your custom pizza.
+  </h2>
+{% endblock content %}
